@@ -1,3 +1,15 @@
+const openMenu = ()=>
+{
+    const ulMenu = document.querySelector("header nav ul");
+    ulMenu.style.display = "block";
+}
+
+const closeMenu = ()=>
+{
+    const ulMenu = document.querySelector("header nav ul");
+    ulMenu.style.display = "none";
+}
+
 const moveHireMeButton = ()=>
 {
     let hireMeButton = window.document.querySelector("header button");
@@ -38,4 +50,19 @@ document.addEventListener("scroll", ()=>
         lastKnownYPosition = newYPositon;
     }
     
+})
+
+let divMenuButton = document.querySelector("header nav div.menu");
+divMenuButton.addEventListener("click", openMenu);
+
+let closeMenuButton = document.querySelector("header nav ul span");
+closeMenuButton.addEventListener("click", closeMenu);
+
+window.addEventListener("resize", ()=>{
+    if(document.documentElement.clientWidth > 375)
+    {
+        const ulMenu = document.querySelector("header nav ul");
+        ulMenu.style.removeProperty("display");
+    }
+
 })
