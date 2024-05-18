@@ -1,3 +1,14 @@
+const setHightOfTheSkillsSectionToAuto = ()=>
+{
+    let dvh = window.innerHeight;
+    let skillsSection = document.querySelector("section#skills");
+    let skillsSectionHeight = skillsSection.clientHeight;
+    if(skillsSectionHeight > dvh)
+    {
+        skillsSection.style.height = "auto";
+    }
+}
+
 const CreateSkill = (name, projectsQunatity, icon, iconColor)=>
 {
     return {
@@ -36,13 +47,13 @@ const CreateSkill = (name, projectsQunatity, icon, iconColor)=>
     };
 }
 
-let html = CreateSkill("HTML5", 4, `<i class="fa-brands fa-html5"></i>`, "html-color");
-let css = CreateSkill("CSS3", 4, `<i class="fa-brands fa-css3-alt"></i>`, "css-color");
+let html = CreateSkill("HTML", 4, `<i class="fa-brands fa-html5"></i>`, "html-color");
+let css = CreateSkill("CSS", 4, `<i class="fa-brands fa-css3-alt"></i>`, "css-color");
 let js = CreateSkill("JS", 2, `<i class="fa-brands fa-js"></i>`, "js-color");
 let java = CreateSkill("Java", 2, `<i class="fa-brands fa-java"></i>`, 'java-color');
 let python = CreateSkill("Python", 1, `<i class="fa-brands fa-python"></i>`, "python-color");
-let git = CreateSkill("Git", 15, `<i class="fa-brands fa-git-alt"></i>`, "git-color");
-let sqlite = CreateSkill("Sqlite", 
+let git = CreateSkill("Git", 7, `<i class="fa-brands fa-git-alt"></i>`, "git-color");
+let sqlite = CreateSkill("SQLite", 
                         3, 
                         `<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 512 228" id="sqlite">` +
                         `<defs><linearGradient id="a" x1="57.662%" x2="57.662%" y1="2.046%" y2="94.439%"><stop offset="0%" stop-color="#97D9F6"></stop><stop offset="92.024%" stop-color="#0F80CC"></stop><stop offset="100%" stop-color="#0F80CC"></stop></linearGradient>`+
@@ -83,7 +94,7 @@ const seeMore = ()=>
 
     let skillsSectionElement = document.createElement("section");
     skillsSectionElement.setAttribute("id", "skills");
-
+    skillsSectionElement.addEventListener("click", (evn)=> filteringProjectsFromSkillsSection(evn));
     let homeSection = document.querySelector("section#home");
     homeSection.insertAdjacentElement('afterend', skillsSectionElement);
 
@@ -95,12 +106,12 @@ const seeMore = ()=>
 
 const addMoreButtonToSkillsSection = ()=> // --------------------[More]--------------------
 {
-    let moreButtonHTMLText = `<button class="more-button">more skills</button>`;
+    let moreButtonHTMLText = `<button class="more-button more-skills">more skills</button>`;
 
     let skillsSection = document.querySelector("section#skills");
     skillsSection.insertAdjacentHTML("beforeend" ,moreButtonHTMLText);
 
-    let moreButton = document.querySelector("button.more-button");
+    let moreButton = document.querySelector("button.more-skills");
     moreButton.addEventListener('click', seeMore);
 }
 
@@ -120,8 +131,7 @@ const addSkillsToTheDOM = ()=>
     }
     else
     {
-        let skillsSection = document.querySelector("section#skills");
-        skillsSection.style.height = "auto";
+        setHightOfTheSkillsSectionToAuto();
     }
 }
 
@@ -132,25 +142,34 @@ window.addEventListener("resize", ()=>
     location.reload();
 })
 
-// const removeAndSaveLastSkill = ()=>
-// {
-//     let skillsSection = document.querySelector("section#skills");
-//     let lastChild = skillsSection.lastChild;
-//     skills.push(lastChild);
-//     lastChild.remove;
-//     console.log(skills);
-// }
+// Working with skills Section click functionality for each skill
 
-// const more = ()=>
-// {
-//     let skillsSection = document.querySelector("section#skills");
-//     let skillsSectionHeight = skillsSection.clientHeight;
-//     let skillsSectionContentHeight = skillsSection.scrollHeight;
-//     if(skillsSectionHeight < skillsSectionContentHeight)
-//     {
-//         removeAndSaveLastSkill();
-        
-//     }
-// }
+const getTheParagraphNameOfSkill = (target)=>
+{
+    let newTarget = target;
+    if(target.nodeName == "SECTION"){return};
+    if(target.nodeName == "P")
+    {
+        newTarget = target.parentElement; 
+    }
 
-// more();
+    let skillParagraphName = newTarget.querySelector("p.name");
+    return skillParagraphName;
+}
+
+const moveToPortfolioSection = ()=>
+{
+    window.location.href = "index.html#portfolio";
+}
+
+const filteringProjectsFromSkillsSection = (evn)=>
+{
+    let evnTarget = getTheParagraphNameOfSkill(evn.target);
+    if(!evnTarget){return}
+    repleaceTheFilterTitleToChoosenSkill(evnTarget);
+    appearTheProjectsBuiltOnTheSkill(evnTarget);
+    moveToPortfolioSection();
+}
+
+let skillsSection = document.querySelector("section#skills");
+skillsSection.addEventListener("click", (evn)=> filteringProjectsFromSkillsSection(evn))

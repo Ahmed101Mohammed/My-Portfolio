@@ -3,6 +3,7 @@
 {
     --main-green: #00b89f;
     --pink: #f513c8;
+    --balck: #2a2a2a;
     scroll-behavior: smooth;
 }
 
@@ -51,7 +52,8 @@
     cursor: pointer;
     text-transform: uppercase;
     padding: 10px;
-    border-radius: 20px
+    border-radius: 20px;
+    margin-bottom: 5px;
 }
 
 .more-button:hover
@@ -713,3 +715,222 @@ section#skills
 }
 
 /* End: Skills section style  */
+
+/* Start: Portfolio section style */
+section#portfolio
+{
+    position: relative;
+    height: 100dvh;
+    background-color: #a2f1e7;
+    top: 1000px;
+    z-index: -1;
+    padding: 10px;
+}
+
+section#portfolio > div.filter
+{
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 100px;
+    opacity: 1;
+    position: relative;
+}
+section#portfolio div.filter div.drop-down
+{
+    position: relative;
+    height: fit-content;
+    width: 170px;
+}
+section#portfolio div.filter div.drop-down div.head
+{
+    padding: 10px;
+    background-color: #ffffff;
+    color: red;
+    cursor: pointer;
+}
+
+section#portfolio div.filter div.drop-down div.head:hover + div.body
+{
+    display: block;
+}
+
+section#portfolio div.filter div.drop-down div.head p
+{
+    display: inline;
+    margin-right: 10px;
+}
+
+section#portfolio div.filter div.drop-down div.head i
+{
+    position: absolute;
+    right: 10px;
+}
+
+section#portfolio div.filter div.drop-down div.body
+{
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    display: none;
+    max-height: 200px;
+    overflow: auto;
+    opacity: 0.95;
+}
+section#portfolio div.filter div.drop-down div.body:hover
+{
+    display: block;
+}
+section#portfolio div.filter div.drop-down div.body ul
+{
+    list-style-type: none;
+}
+
+section#portfolio div.filter div.drop-down div.body ul li
+{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+section#portfolio div.filter div.drop-down div.body ul li:hover
+{
+    background-color: #00b89f24;
+}
+
+
+div.projects
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: calc(100% - 100px);
+}
+
+div.projects div.project-card
+{
+    width: 316.3px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    margin-bottom: 30px;
+    height: fit-content;
+}
+
+div.projects div.project-card:hover
+{
+    transform: scale(1.05, 1.05);
+}
+
+div.projects div.project-card div.photo
+{
+    width: 316.3px;
+    height: 151.5px;
+}
+
+div.projects div.project-card div.photo img
+{
+    width: 100%;
+    height: 100%;
+}
+
+div.projects div.project-card div.info
+{
+    position: relative;
+    background-color: whitesmoke;
+    padding: 5px;
+    z-index: -1;
+}
+
+div.projects div.project-card div.info a.repo
+{
+    position: absolute;
+    right: 5px;
+    font-size: 25px;
+    opacity: 0.3;
+    transition-duration: 0.6s;
+}
+
+div.projects div.project-card div.info a.repo:hover
+{
+    opacity: 1;
+}
+
+div.projects div.project-card div.info p.name
+{
+    color: black;
+}
+
+div.projects div.project-card div.info p.discription
+{
+    color: #6d6d6d;
+    font-weight: normal;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 20px;
+    padding: 2px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+div.projects div.project-card div.info ul.skills-tags
+{
+    list-style: none;
+    display: flex;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+div.projects div.project-card div.info ul.skills-tags li
+{
+    font-weight: normal !important;
+    padding: 3px;
+    border: 0px black solid;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+
+div.projects div.project-card div.info ul.skills-tags li:hover
+{
+    background-color: #add8e633;
+}
+
+@media (max-width: 390px) {
+    div.projects div.project-card
+    {
+        width: 270.3px;
+        margin-right: 0px;
+    }
+
+    div.projects div.project-card div.photo
+    {
+        width: 270.3px;
+        height: 129.5px;
+    }
+}
+
+@media (max-width: 320px) {
+    div.projects div.project-card
+    {
+        width: 220.3px;
+    }
+
+    div.projects div.project-card div.photo
+    {
+        width: 220.3px;
+        height: 105.5px;
+    }
+}
+
+/* End: Portfolio section style */
