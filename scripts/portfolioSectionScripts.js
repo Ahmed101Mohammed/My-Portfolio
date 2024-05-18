@@ -82,25 +82,25 @@ const CreateProjectCard = (photo, photoDiscription, gitHubRepoUrl, name, discrip
 
 const myPortfolio = CreateProjectCard("./images/portfolio-project-photo.bmp",
     "Project photo: containt image for the main page of the project, and it contain header, and nav bar, with personal photo.",
-    "https://github.com/Ahmed101Mohammed/My-Portfolio", "My-Portfolio", "It's my main portfolio projoct, as a software developer.",
+    "https://github.com/Ahmed101Mohammed/My-Portfolio", "My-Portfolio", "My main portfolio projoct, as a software developer.",
     ["HTML", "CSS", "JS", "Git"], "https://github.com/Ahmed101Mohammed/My-Portfolio");
 
 const lunchSite = CreateProjectCard("./images/LunchSite.bmp", 
     "Project photo: containt image for the main page of the project, and it contain white header, And Rocket logo, And the project is made with puple theme.",
-        "https://github.com/Ahmed101Mohammed/product-landing-page", "LunchSite", "It's product-landing-page project for building site service.",
+        "https://github.com/Ahmed101Mohammed/product-landing-page", "LunchSite", "Product-landing-page project for building site service.",
         ["HTML", "CSS", "Git"], "https://ahmed101mohammed.github.io/product-landing-page/");
 
 
 const techDocumentation = CreateProjectCard("./images/tech-documentation.bmp", 
     "Project photo: containt image for the introduction part of the documentation, it's look basic with side navigation bar.",
     "https://github.com/Ahmed101Mohammed/technical-documentation-page", "Technical Documentation Page.",
-    "It's an technical documentaion page to learn fundamentals of programming with JS.", ["HTML", "CSS", "Git"], 
+    "Technical documentaion page to learn fundamentals of programming with JS.", ["HTML", "CSS", "Git"], 
     "https://ahmed101mohammed.github.io/technical-documentation-page/");
 
 const myTasks = CreateProjectCard("./images/to-do-app.bmp",
     "Project photo: contain image for the single page to-do app, and it's contain a header and side bar with plus sign to add new to-do list, and in the body of the project page, you can see number of default lists that already created by the me.",
     "https://github.com/Ahmed101Mohammed/to-do-Llst-dynamic", "My Tasks",
-    "It's an basic dynamic to-do list app.",
+    "Basic dynamic to-do list app.",
     ["HTML", "CSS", "JS", "Git"], "https://ahmed101mohammed.github.io/to-do-Llst-dynamic/");
 
 const trackAchievements = CreateProjectCard("./images/track_achievements.bmp",
@@ -116,7 +116,7 @@ const VegStore = CreateProjectCard("./images/VegStore.bmp", "It's just image for
     ["Java", "SQLite", "Git"], "#");
 
 const progressTracker = CreateProjectCard("./images/progress_tracker.bmp", "It's just image for the projecr repository in GitHub.",
-    "https://github.com/Ahmed101Mohammed/progress-tracker", "Progress Tracker", "The project is a progress-tracker application. to follow your goals progress.",
+    "https://github.com/Ahmed101Mohammed/progress-tracker", "Progress Tracker", "Progress-tracker application. to follow your goals progress.",
     ["Python", "SQLite", "Git"], "#");
 
 const projects = [myPortfolio, lunchSite, techDocumentation, myTasks, trackAchievements, VegStore, progressTracker];
