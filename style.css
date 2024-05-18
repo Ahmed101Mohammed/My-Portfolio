@@ -166,6 +166,7 @@ header .home
 header a
 {
     margin-right: 20px;
+    color: var(--main-green);
 }
 header a.home:hover
 {
