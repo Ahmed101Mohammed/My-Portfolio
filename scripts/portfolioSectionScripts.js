@@ -1,3 +1,15 @@
+// AutoMate the generation of drop-down filter options.
+const autoSkillsOptionsGeneratorForFilter = ()=>
+{
+    const dropDownBody = document.querySelector("section#portfolio div.body ul");
+    for(skill of skills)
+    {
+        let liHTMLcode = `<li>${skill.name}</li>`;
+        dropDownBody.insertAdjacentHTML('beforeend', liHTMLcode);
+    }
+}
+autoSkillsOptionsGeneratorForFilter();
+// -------
 const setHightOfThePortfolioSectionToAuto = ()=>
 {
     let dvh = window.innerHeight;
