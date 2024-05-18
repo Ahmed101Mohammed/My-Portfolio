@@ -536,7 +536,7 @@ div.filter
     opacity: 0.8;
 }
 
-#home div.introduction div.social li:hover
+#home div.introduction div.social li a:hover
 {
     color: var(--pink);
 }
