@@ -932,5 +932,16 @@ div.projects div.project-card div.info ul.skills-tags li:hover
         height: 105.5px;
     }
 }
-
 /* End: Portfolio section style */
+
+/* Start: Footer style */
+footer
+{
+    padding: 20px;
+    position: relative;
+    top: 1000px;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+/* End: Footer style*/
