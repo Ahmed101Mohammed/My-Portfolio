@@ -131,12 +131,13 @@ header
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
+    height: 120px;
     font-size: 20px;
     position: fixed;
     top: 0px;
     left: 0px;
     transition-duration: 1.6s;
+    background-color: #ffffffd9;
 }
 
 header nav
