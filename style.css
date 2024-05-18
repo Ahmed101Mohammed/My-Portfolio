@@ -950,4 +950,24 @@ footer ul
     list-style-type: disclosure-closed;
     padding-left: 30px;
 }
+
+footer a
+{
+    color: wheat;
+}
+
+footer a:hover
+{
+    color: rgb(225, 230, 223);
+}
+
+footer a:active
+{
+    color: rgb(255, 255, 255);
+}
+
+footer a:visited
+{
+    color:rgba(6, 189, 140, 0);
+}
 /* End: Footer style*/
