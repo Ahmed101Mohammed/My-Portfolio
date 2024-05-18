@@ -150,6 +150,7 @@ const seeMoreProjects = (projects)=>
     console.log({dvh})
     portfolioSection.style.height = (portfolioSectionHight + dvh) + "px";
     addProjectsToTheDom(projects);
+    setHTMLAndBodyHeight();
 }
 
 const addMoreButtonToProjectsContainer = (projects)=> // --------------------[More]--------------------

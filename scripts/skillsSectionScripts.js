@@ -102,6 +102,7 @@ const seeMore = ()=>
     console.log({dvh})
     skillsSectionElement.style.height = (skillsSectionHight + dvh) + "px";
     addSkillsToTheDOM();
+    setHTMLAndBodyHeight();
 }
 
 const addMoreButtonToSkillsSection = ()=> // --------------------[More]--------------------
