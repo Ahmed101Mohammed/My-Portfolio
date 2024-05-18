@@ -944,4 +944,10 @@ footer
     width: 100%;
     color: white;
 }
+
+ul
+{
+    list-style-type: disclosure-closed;
+    padding-left: 30px;
+}
 /* End: Footer style*/
