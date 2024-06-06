@@ -119,7 +119,10 @@ const progressTracker = CreateProjectCard("./images/progress_tracker.png", "It's
     "https://github.com/Ahmed101Mohammed/progress-tracker", "Progress Tracker", "Progress-tracker application. to follow your goals progress.",
     ["Python", "SQLite", "Git"], "#");
 
-const projects = [myPortfolio, lunchSite, techDocumentation, myTasks, trackAchievements, VegStore, progressTracker];
+const jsckCompiler = CreateProjectCard("./images/jack-compiler.png", "It's just image for the projecr repository in GitHub.",
+    "https://github.com/Ahmed101Mohammed/Jack-compiler", "Jack PL Compiler", "A compiler for jack language, designed by instructors in the Nand2Tetris course.",
+    ["Java", "Git"], "#");
+const projects = [myPortfolio, lunchSite, techDocumentation, myTasks, trackAchievements, VegStore, progressTracker, jsckCompiler];
 
 const isProjectsContainerisOverFlow = ()=>
 {
