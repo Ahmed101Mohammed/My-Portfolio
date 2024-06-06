@@ -1,10 +1,1 @@
-const setHTMLAndBodyHeight = ()=>
-{
-    let htmlElement = document.querySelector("html");
-    let body = document.querySelector("body");
-    let deepPointInPage = document.body.scrollHeight;
-    htmlElement.style.height = deepPointInPage + "px";
-    body.style.height = deepPointInPage + "px";
-}
-
-setHTMLAndBodyHeight();
+const setHTMLAndBodyHeight=()=>{let e=document.querySelector("html"),t=document.querySelector("body"),h=document.body.scrollHeight;e.style.height=h+"px",t.style.height=h+"px"};setHTMLAndBodyHeight();
