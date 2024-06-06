@@ -21,3 +21,15 @@ For this app, I used these technologies:
 ### Main challenge I face in this project:
 The main challenge that I faced in this project was: how to handle scroll animation without using libraries, and this led me to learn more about the APIs of both the Documentation object and the window object.
 
+## Installation and Running:
+### Installing the project:
+To install the project you can open your terminal and enter this command:
+```
+git clone https://github.com/Ahmed101Mohammed/My-Portfolio.git
+```
+### How to run the project:
+Follow the following steps in the order:
+> 1. Enter the project folder.
+> 2. Connect with the internet, because the project is dependent on some online resources, for icons and fonts.
+> 3. Open the **index.html** file with any browser, and I recommend chrome.
+
