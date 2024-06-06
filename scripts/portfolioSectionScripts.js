@@ -80,42 +80,42 @@ const CreateProjectCard = (photo, photoDiscription, gitHubRepoUrl, name, discrip
     }
 };
 
-const myPortfolio = CreateProjectCard("./images/portfolio-project-photo.bmp",
+const myPortfolio = CreateProjectCard("./images/portfolio-project-photo.png",
     "Project photo: containt image for the main page of the project, and it contain header, and nav bar, with personal photo.",
     "https://github.com/Ahmed101Mohammed/My-Portfolio", "My-Portfolio", "My main portfolio projoct, as a software developer.",
     ["HTML", "CSS", "JS", "Git"], "https://my-portfolio-7jkt.onrender.com/");
 
-const lunchSite = CreateProjectCard("./images/LunchSite.bmp", 
+const lunchSite = CreateProjectCard("./images/LunchSite.png", 
     "Project photo: containt image for the main page of the project, and it contain white header, And Rocket logo, And the project is made with puple theme.",
         "https://github.com/Ahmed101Mohammed/product-landing-page", "LunchSite", "Product-landing-page project for building site service.",
         ["HTML", "CSS", "Git"], "https://ahmed101mohammed.github.io/product-landing-page/");
 
 
-const techDocumentation = CreateProjectCard("./images/tech-documentation.bmp", 
+const techDocumentation = CreateProjectCard("./images/tech-documentation.png", 
     "Project photo: containt image for the introduction part of the documentation, it's look basic with side navigation bar.",
     "https://github.com/Ahmed101Mohammed/technical-documentation-page", "Technical Documentation Page.",
     "Technical documentaion page to learn fundamentals of programming with JS.", ["HTML", "CSS", "Git"], 
     "https://ahmed101mohammed.github.io/technical-documentation-page/");
 
-const myTasks = CreateProjectCard("./images/to-do-app.bmp",
+const myTasks = CreateProjectCard("./images/to-do-app.png",
     "Project photo: contain image for the single page to-do app, and it's contain a header and side bar with plus sign to add new to-do list, and in the body of the project page, you can see number of default lists that already created by the me.",
     "https://github.com/Ahmed101Mohammed/to-do-Llst-dynamic", "My Tasks",
     "Basic dynamic to-do list app.",
     ["HTML", "CSS", "JS", "Git"], "https://ahmed101mohammed.github.io/to-do-Llst-dynamic/");
 
-const trackAchievements = CreateProjectCard("./images/track_achievements.bmp",
+const trackAchievements = CreateProjectCard("./images/track_achievements.png",
     "It's just image for the projecr repository in GitHub.", 
     "https://github.com/Ahmed101Mohammed/track-achievements", "Track Achievements", 
     "Track your daily achievements to know your real productivity and progress. Here where you will see the real value of your habits.",
     ["Java", "SQLite", "Git"], "#");
 
 
-const VegStore = CreateProjectCard("./images/VegStore.bmp", "It's just image for the projecr repository in GitHub.",
+const VegStore = CreateProjectCard("./images/VegStore.png", "It's just image for the projecr repository in GitHub.",
     "https://github.com/Ahmed101Mohammed/VegStore", "VegStore",
     "Application for a vegetable store with a static known number of Items to make a selling process with recording and give a receipt for the client.",
     ["Java", "SQLite", "Git"], "#");
 
-const progressTracker = CreateProjectCard("./images/progress_tracker.bmp", "It's just image for the projecr repository in GitHub.",
+const progressTracker = CreateProjectCard("./images/progress_tracker.png", "It's just image for the projecr repository in GitHub.",
     "https://github.com/Ahmed101Mohammed/progress-tracker", "Progress Tracker", "Progress-tracker application. to follow your goals progress.",
     ["Python", "SQLite", "Git"], "#");
 
